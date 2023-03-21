@@ -1,0 +1,36 @@
+button{
+    display:grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    margin:auto;
+}
+
+img{
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 20;
+}
+
+svg{
+    grid-area: 1 / 1 / 2 / 2;
+    /* display:none; */
+    z-index:25;
+    fill:none;
+}
+svg:hover{
+    z-index:25;
+    grid-area: 1 / 1 / 2 / 2;
+    fill:rgba(242, 255, 0, 0.581);
+    
+}
+/* Removes button styling */
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
